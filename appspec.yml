@@ -6,7 +6,7 @@ files:
   - source: /dockerfile
     destination: /Dockerfile/ubuntu/app/   
 hooks:
-  BeforeInstall:
+  Afterinstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
